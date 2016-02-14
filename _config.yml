@@ -1,0 +1,19 @@
+# Setup
+title:        TJM's blog.
+tagline:      A blog of TommyJerryMairo
+baseurl:      ""
+paginate:     1
+url:          https://blog.tjm.moe/
+
+# About/contact
+author:
+  name:       Tommy Jerry Mairo
+  url:        https://github.com/tommyjerrymairo
+  email:      tommy.mairo@gmail.com
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: redcarpet
