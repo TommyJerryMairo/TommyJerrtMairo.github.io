@@ -5,11 +5,12 @@ deploy:
 	cp -r -p _site/ /tmp/
 	git add -A
 	git commit -m "Deploy blog"
+	git push
 	git checkout master
 	rm -r ./*
 	cp -r -p /tmp/_site/* ./
 	git add -A
 	git commit -m "Deploy blog"
-	git push origin master source
+	git push 
 	git checkout source
 	echo "Deploy succeed"
