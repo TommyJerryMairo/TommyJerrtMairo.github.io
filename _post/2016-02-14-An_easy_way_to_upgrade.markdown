@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "使用make完成blog的更新."
 date:   2016-02-14 19:58:10
 categories: Github-pages
