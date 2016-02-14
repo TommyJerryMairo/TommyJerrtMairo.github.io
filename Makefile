@@ -1,4 +1,5 @@
 deploy:
+	rm -rf ./_site/*
 	rm -rf /tmp/_site/
 	jekyll build
 	cp -r _site/ /tmp/
