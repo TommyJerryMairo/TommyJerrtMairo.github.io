@@ -34,20 +34,21 @@
 <p>窝写的Makefile如下</p>
 
 <figure class="highlight"><pre><code class="language-makefile" data-lang="makefile"><span class="nl">deploy</span><span class="o">:</span>
-    <span class="err">rm</span> <span class="err">-rf</span> <span class="err">./_site/*</span>
-    <span class="err">rm</span> <span class="err">-rf</span> <span class="err">/tmp/_site/</span>
-    <span class="err">jekyll</span> <span class="err">build</span>
-    <span class="err">cp</span> <span class="err">-r</span> <span class="err">-p</span> <span class="err">_site/</span> <span class="err">/tmp/</span>
-    <span class="err">git</span> <span class="err">add</span> <span class="err">-A</span>
-    <span class="err">git</span> <span class="err">commit</span> <span class="err">-m</span> <span class="s2">"Deploy blog"</span>
-    <span class="err">git</span> <span class="err">checkout</span> <span class="err">master</span>
-    <span class="err">rm</span> <span class="err">-r</span> <span class="err">./*</span>
-    <span class="err">cp</span> <span class="err">-r</span> <span class="err">-p</span> <span class="err">/tmp/_site/*</span> <span class="err">./</span>
-    <span class="err">git</span> <span class="err">add</span> <span class="err">-A</span>
-    <span class="err">git</span> <span class="err">commit</span> <span class="err">-m</span> <span class="s2">"Deploy blog"</span>
-    <span class="err">git</span> <span class="err">push</span> <span class="err">origin</span> <span class="err">master</span> <span class="err">source</span>
-    <span class="err">git</span> <span class="err">checkout</span> <span class="err">source</span>
-    <span class="err">echo</span> <span class="s2">"Deploy succeed"</span></code></pre></figure>
+	rm -rf ./_site/
+	rm -rf /tmp/_site/
+	jekyll build
+	cp -r -p _site/ /tmp/
+	git add -A
+	git commit -m <span class="s2">"Deploy blog"</span>
+	git push
+	git checkout master
+	rm -rf ./<span class="k">*</span>
+	cp -r -p /tmp/_site/<span class="k">*</span> ./
+	git add -A
+	git commit -m <span class="s2">"Deploy blog"</span>
+	git push 
+	git checkout <span class="nb">source</span>
+	<span class="err">echo "Deploy succeed"</span></code></pre></figure>
 
 <p>诺……这样每次make一下就嚎了……</p>
 
