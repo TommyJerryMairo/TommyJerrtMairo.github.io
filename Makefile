@@ -7,7 +7,7 @@ deploy:
 	git commit -m "Deploy blog"
 	git push
 	git checkout master
-	rm -r ./*
+	rm -rf ./*
 	cp -r -p /tmp/_site/* ./
 	git add -A
 	git commit -m "Deploy blog"
