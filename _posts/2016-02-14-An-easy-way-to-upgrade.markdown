@@ -11,7 +11,7 @@ tags: Github-pages make jekyll
 
 窝写的Makefile如下
 
-{% highlight makefile %}
+{% highlight shell %}
 deploy:
 	rm -rf ./_site/
 	rm -rf /tmp/_site/
