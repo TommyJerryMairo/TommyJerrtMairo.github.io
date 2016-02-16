@@ -39,7 +39,7 @@
 
 <p>窝写的Makefile如下</p>
 
-<figure class="highlight"><pre><code class="language-makefile" data-lang="makefile"><span class="nl">deploy</span><span class="o">:</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">deploy:
 	rm -rf ./_site/
 	rm -rf /tmp/_site/
 	jekyll build
@@ -53,8 +53,8 @@
 	git add -A
 	git commit -m <span class="s2">"Deploy blog"</span>
 	git push 
-	git checkout <span class="nb">source</span>
-	<span class="err">echo "Deploy succeed"</span></code></pre></figure>
+	git checkout <span class="nb">source
+	echo</span> <span class="s2">"Deploy succeed"</span></code></pre></figure>
 
 <p>诺……这样每次make一下就嚎了……</p>
 
