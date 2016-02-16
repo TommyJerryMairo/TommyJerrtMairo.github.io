@@ -2,7 +2,8 @@
 layout: post
 title:  "使用make完成blog的更新."
 date:   2016-02-14 19:58:10
-categories: Github-pages
+categories: Technology 
+tags: Github-pages make jekyll 
 ---
 
 每次POST后都打很多命令简直是浪费生命。
