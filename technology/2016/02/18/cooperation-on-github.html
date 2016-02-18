@@ -31,32 +31,39 @@
 
     <section class="main-content">
       
-      <h2>使用make完成blog的更新.</h2>
-<p class="meta">15 Feb 2016</p>
+      <h2>在Github上与多人合作——单一repo</h2>
+<p class="meta">18 Feb 2016</p>
 
-<p>每次POST后都打很多命令简直是浪费生命。
-于是窝想了个歪招……用make完成POST后的一系列命令</p>
+<p>在Github上看到了一个项目，灵感顿生，想要参与其中，怎么办？
+下面是窝的姿势：</p>
 
-<p>窝写的Makefile如下</p>
+<h6>准备工作</h6>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">deploy:
-    rm -rf ./_site/
-    rm -rf /tmp/_site/
-    jekyll build
-    cp -r -p _site/ /tmp/
-    git add -A
-    git commit -m <span class="s2">"Deploy blog"</span>
-    git push
-    git checkout master
-    rm -rf ./<span class="k">*</span>
-    cp -r -p /tmp/_site/<span class="k">*</span> ./
-    git add -A
-    git commit -m <span class="s2">"Deploy blog"</span>
-    git push 
-    git checkout <span class="nb">source
-    echo</span> <span class="s2">"Deploy succeed"</span></code></pre></figure>
+<ol>
+<li><p>首先fork到自己的帐户下</p></li>
+<li><p>从自己的帐户下clone到本地</p></li>
+<li><p>制造一个upstream
+git remote add upstream &lt;上游维护者的repo&gt;</p></li>
+<li><p>整一个dev分支
+git checkout -b dev</p></li>
+</ol>
 
-<p>诺……这样每次make一下就嚎了……</p>
+<h6>日常使用</h6>
+
+<ul>
+<li><p>及时fetch上游
+git fetch upstream
+git checkout master
+git merge upstream/master</p></li>
+<li><p>及时merge自己的代码(默认master与上游保持一致)
+git checkout dev
+git merge master</p></li>
+<li><p>dev分支要即使push
+git push origin</p></li>
+</ul>
+
+<p>剩下的就是pull request跟上游维护者提交自己的代码了。
+只要勤merge，一般不会太困难。</p>
 
 
 
