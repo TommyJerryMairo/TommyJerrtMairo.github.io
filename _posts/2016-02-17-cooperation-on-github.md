@@ -33,7 +33,9 @@ tags: git Github
 
 `
     git fetch upstream
+
     git checkout master
+
     git merge upstream/master
 `
     
@@ -41,6 +43,7 @@ tags: git Github
 
 `
     git checkout dev
+
     git merge master
 `
     
