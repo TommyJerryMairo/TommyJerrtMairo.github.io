@@ -45,27 +45,41 @@
 <li><p>制造一个upstream</p>
 
 <p>git remote add upstream &lt;上游维护者的repo&gt;</p></li>
-<li><p>整一个dev分支</p>
-
-<p>git checkout -b dev</p></li>
+<li><p>整一个dev分支</p></li>
 </ol>
+
+<p><code>
+    git checkout -b dev
+</code></p>
 
 <h6>日常使用</h6>
 
 <ul>
-<li><p>及时fetch上游</p>
-
-<p>git fetch upstream
-git checkout master
-git merge upstream/master</p></li>
-<li><p>及时merge自己的代码(默认master与上游保持一致)</p>
-
-<p>git checkout dev
-git merge master</p></li>
-<li><p>dev分支要即使push</p>
-
-<p>git push origin</p></li>
+<li>及时fetch上游</li>
 </ul>
+
+<p><code>
+    git fetch upstream
+    git checkout master
+    git merge upstream/master
+</code></p>
+
+<ul>
+<li>及时merge自己的代码(默认master与上游保持一致)</li>
+</ul>
+
+<p><code>
+    git checkout dev
+    git merge master
+</code></p>
+
+<ul>
+<li>dev分支要即使push</li>
+</ul>
+
+<p><code>
+    git push origin
+</code></p>
 
 <p>剩下的就是pull request跟上游维护者提交自己的代码了。
 只要勤merge，一般不会太困难。</p>
