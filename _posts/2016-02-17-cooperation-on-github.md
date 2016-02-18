@@ -17,20 +17,25 @@ tags: git Github
 
 3. 制造一个upstream
 
+`
 
     git remote add upstream <上游维护者的repo>
 
+`
 
 4. 整一个dev分支
 
+`
 
     git checkout -b dev
 
+`
 
 ###### 日常使用
 
 - 及时fetch上游
 
+`
 
     git fetch upstream
 
@@ -38,19 +43,24 @@ tags: git Github
 
     git merge upstream/master
 
+`
     
 - 及时merge自己的代码(默认master与上游保持一致)
 
+`
 
     git checkout dev
 
     git merge master
 
+`
     
 - dev分支要即使push
 
 `
+
     git push origin
+
 `
 
 剩下的就是pull request跟上游维护者提交自己的代码了。
