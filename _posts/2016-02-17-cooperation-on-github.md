@@ -17,7 +17,9 @@ tags: git Github
 
 3. 制造一个upstream
 
+`
     git remote add upstream <上游维护者的repo>
+`
 
 4. 整一个dev分支
 
