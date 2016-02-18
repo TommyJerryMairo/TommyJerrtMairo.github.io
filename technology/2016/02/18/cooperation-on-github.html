@@ -42,47 +42,30 @@
 <ol>
 <li><p>首先fork到自己的帐户下</p></li>
 <li><p>从自己的帐户下clone到本地</p></li>
-<li><p>制造一个upstream</p></li>
+<li><p>制造一个upstream</p>
+
+<p>git remote add upstream &lt;上游维护者的repo&gt;</p></li>
+<li><p>整一个dev分支</p>
+
+<p>git checkout -b dev</p></li>
 </ol>
-
-<p><code>
-    git remote add upstream &lt;上游维护者的repo&gt;
-</code></p>
-
-<ol>
-<li>整一个dev分支</li>
-</ol>
-
-<p><code>
-    git checkout -b dev
-</code></p>
 
 <h6>日常使用</h6>
 
 <ul>
-<li>及时fetch上游</li>
-</ul>
+<li><p>及时fetch上游</p>
 
-<p>`
-    git fetch upstream</p>
-<div class="highlight"><pre><code class="language-" data-lang="">git checkout master
+<p>git fetch upstream</p>
 
-git merge upstream/master
-</code></pre></div>
-<p>`</p>
+<p>git checkout master</p>
 
-<ul>
-<li>及时merge自己的代码(默认master与上游保持一致)</li>
-</ul>
+<p>git merge upstream/master</p></li>
+<li><p>及时merge自己的代码(默认master与上游保持一致)</p>
 
-<p>`
-    git checkout dev</p>
-<div class="highlight"><pre><code class="language-" data-lang="">git merge master
-</code></pre></div>
-<p>`</p>
+<p>git checkout dev</p>
 
-<ul>
-<li>dev分支要即使push</li>
+<p>git merge master</p></li>
+<li><p>dev分支要即使push</p></li>
 </ul>
 
 <p><code>
