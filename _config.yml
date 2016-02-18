@@ -16,3 +16,4 @@ gems:
   - jekyll-paginate
 
 #Others
+markdown: redcarpet
