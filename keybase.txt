@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/t_j_m
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.tjm.moe
+  * I am t_j_m (https://keybase.io/t_j_m) on keybase.
+  * I have a public key with fingerprint 11A9 FC1B A570 FEEC 0B17  F42D C624
+    63BE 9F6B 2D7D
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid":
+"0101fc2c9ceae99a93e16d9e39c2653fde54705467f7d4763072b58fafa127f999f70a",
+            "fingerprint": "11a9fc1ba570feec0b17f42dc62463be9f6b2d7d",
+            "host": "keybase.io",
+            "key_id": "c62463be9f6b2d7d",
+            "kid":
+"0101fc2c9ceae99a93e16d9e39c2653fde54705467f7d4763072b58fafa127f999f70a",
+            "uid": "9905d1fba89a0f52815d95e7f38b4019",
+            "username": "t_j_m"
+        },
+        "service": {
+            "hostname": "blog.tjm.moe",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1460548517,
+    "expire_in": 157680000,
+    "prev":
+"bb01a03c00d2165d6acb483d8ebfc5fd667cffea356a14b51df38fe2fa9d94d7",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owGtUltIVEEY3q00M7pSFGRop5AezM6c+2xRECH1okGIUcFp5szM7nEvZ91zMm3T
+6CLdNjIjkKiMogtlbEVawRJF4AZBQRfSp66QoUGBLxVmc6Teemxehvn/7/v+7/uZ
+9mkTA0XBviXW/a7ospbgk884UDdd7k0L2CHNQigtROn4RWOEup4ZtYkQEkQgAmZJ
+FrQoohAiKFOgEUhlaEmaKjNCVUUXVUXTmU4UXZNFXcKqwRBDQNIZhJDpIhIqBGYn
+wjSVTNkJj8sCgCCzAEaqLjJKLREDnSkSsTRJ0WRMIdOwRHTCiRHH9RncHEYurbQd
+XuMPc9zeP/D/2ff2cTkIRZUAhpEBkchUyQAqgSrVmWxgRQTQB7o0lUBxytGeWW/G
+hZYKgZcabYv6W/Vj/GnjmBOu9OrjlXGHcmIy5XiO5cR4J+J5STfkM73mpA/dQbH5
+R8TEdoLwJXJGI025tpMQQoAjLc/2VYGi8TiGCvQKgTYl7RQ1bR+h6poh8uPPoY3+
+dCwCJMqWKNYSCWgq0ZCFFUMmBsXMUhnRNN1ijCJZ1RBQsAoIT8moxBAkUCG64Odq
+SDhCyOA+UZhrunY4gbztKSq0FB8KlkwKBIsChQUT/O8VKJ4y8++fG41PHtsCXvTU
+DIDmqmnFh4+8oNFjLPd4cdWCG6tq2oab06VTp144lR9ZV042Zry9Jd/u2H37Sq9H
+33W0Hmxb9HMWW9jYXZb/Uv18a2Zs3tw1PdlrmQ/dv7Zdym8Sdr1sTUeE7JzTnyY9
+Xi5l6gPvBtj32ycG77182jX0Krh044O79Q9j5sAuyc1cVYbPN60J9cADO3tvFrQN
+nEuvvZsbLSzpWTs0Uv5euZj90B99ZM+fsqR7+Vhv54/+1ZGO1hXXZ2wOrRwd7NBC
+K6rvFChldZf3FK3PmrGGZ4NNbv/u3JW6N2+vHT5e2EfONOWeJo+e/XgyvOF16amv
+s2tnhdtf38jv1zudJ7d+Aw==
+=B2Lu
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/t_j_m
+
+==================================================================
+
+
